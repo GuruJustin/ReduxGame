@@ -1,0 +1,63 @@
+
+@font-face {
+  font-family: 'MyFont';
+  src: local('MyFont'), url('../public/font/LuckiestGuy-Regular.ttf') format('truetype');
+}
+
+.App {
+  font-family: "MyFont";
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size:contain;
+  height : 100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.Preloading {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  font-size : 45px;
+  font-weight : 500;
+  color : white;
+  text-shadow: -1.45px -1.45px 0 #000, 1.45px -1.45px 0 #000, -1.45px 1.45px 0 #000, 1.45px 1.45px 0 #000;
+}
+
+.Preloading img{
+  height : 70px;
+  margin-bottom:30px;
+}
+
+.Waiting {
+  animation: moving 3s infinite;
+  width : 70px;
+  height : 80px;
+  background-position: center;
+  background-size:cover;
+  margin-bottom:40px;
+}
+
+@keyframes moving {
+  0% ,100%{
+      transform: rotateZ(0deg);
+  }
+  100% {
+      transform: rotateZ(360deg);
+  }
+}
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px)
+  }
+  100% {
+    transform: translateY(0px)
+  }
+}
