@@ -41,6 +41,47 @@
   margin-bottom:40px;
 }
 
+
+.startup {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  font-size : 45px;
+}
+
+.startup .title {
+  width : 200px;
+  height : 100px;
+  margin-bottom:10px;
+}
+
+.startup .teacher {
+  width : 150px;
+  height : 200px;
+}
+
+.startup .start_button {
+  width : 200px;
+  margin-top : -30px;
+}
+
+.startup .start_button img{
+  width : 200px;
+  height : 60px;
+}
+
+.startup .menu_button{
+  width : 200px
+}
+
+.startup .menu_button img{
+  height : 30px;
+  width : 200px;
+  margin-top : 3px;
+}
+
+
+
 @keyframes moving {
   0% ,100%{
       transform: rotateZ(0deg);

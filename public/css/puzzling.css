@@ -1,0 +1,104 @@
+.puzzling_container {
+    display:flex;
+    justify-content :center;
+    align-items:center;
+    flex-direction: column;
+}
+.puzzling_header {
+    width : 250px;
+    height : 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    background-image : url('../images/puzzle_comment.png');
+    animation: falling 2s;
+    position:absolute
+}
+
+
+@keyframes falling {
+    0%{
+        transform: translateY(-100px);
+    }
+    60% {
+        transform: translateY(150px);
+    }
+    100% {
+        transform: translateY(140px);
+    }
+}
+
+.puzzling {
+    display:flex;
+    justify-content :center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.puzzling_board {
+    width : 250px;
+    height : 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    background-image : url('../images/puzzle_board.png');
+    display:flex;
+    flex-direction: column;
+    justify-content :center;
+    align-items:center;
+}
+
+
+.puzzling_board .formula {
+    display:flex;
+    flex-direction:row;
+    justify-content : center;
+    margin-bottom:30px;
+    align-items: center;
+}
+
+.puzzling_board .formula .problem{
+    font-size : 30px;
+    color : white
+}
+.puzzling_board .formula .result{
+    border : 2px dashed white;
+    background-color : green;
+    height : 40px;
+    width : 40px;
+}
+
+.puzzling_board .next_button {
+    width : 100px;
+    height : 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    background-image : url('../images/Dalje.png');
+}
+
+
+.puzzling_result {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+
+
+.result_bg {
+    width : 18px;
+    height : 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    margin-top : 20px;
+    background-image : url('../images/check_bg.png');
+}
+
+.success_bg {
+    background-image : url('../images/success_bg.png');
+}
+
+.failed_bg {
+    background-image : url('../images/failed_bg.png');
+}
