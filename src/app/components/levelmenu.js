@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 import '../../../public/css/levelmenu.css';
 
@@ -63,13 +64,13 @@ class LevelMenu extends React.Component {
                 <div className="header"></div>
 
                 <div className="level-menus">
-                    {menus.map(function({gold, level, activate}){
-                        if (gold)
-                            return <a className="level-each-menu golden">{level}</a>;
-                        else if (activate)
-                            return <a className="level-each-menu activate">{level}</a>;
+                    {menus.map(function(item){
+                        if (item.gold)
+                            return <Link to="/puzzling" className="level-each-menu golden" id = {item.key}>{item.level}</Link>;
+                        else if (item.activate)
+                            return <Link to="/puzzling" className="level-each-menu activate" id = {item.key}>{item.level}</Link>;
                         else 
-                            return <a className="level-each-menu deactivate">{level}</a>;
+                            return <div className="level-each-menu deactivate" id = {item.key}>{item.level}</div>;
                     })}
                 </div>
 

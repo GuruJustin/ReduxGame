@@ -6,21 +6,21 @@
 }
 
 .levelmenu .header {
-    width : 200px;
+    width : 300px;
     height : 107px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size:contain;
+    background-size: 100% 100%;
     margin-bottom : 40px;
     background-image : url('../images/menu_header.png')
 }
 
 .levelmenu .footer {
-    width : 200px;
+    width : 300px;
     height : 55px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size:contain;
+    background-size: 100% 100%;
     margin-top : 20px;
     background-image : url('../images/menu_footer.png');
 }
@@ -30,35 +30,35 @@
     flex-direction: row;
     flex-wrap : wrap;
     justify-content : space-around;
-    width : 200px;
+    width : 300px;
 }
 
 .level-each-menu {
-    height : 35px;
-    width : 35px;
+    height : 65px;
+    width : 65px;
     font-weight : bold;
     color : white;
     text-shadow: -1.45px -1.45px 0 #000, 1.45px -1.45px 0 #000, -1.45px 1.45px 0 #000, 1.45px 1.45px 0 #000;
-    font-size : 60px;
+    font-size : 80px;
     display:flex;
     align-items:center;
     justify-content:center;
     margin : 10px;
-    cursor:pointer;
-
 }
 
 .golden{
     background-image : url('../images/menu_golden.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size:50px;
+    background-size:130% 130%;
+    cursor:pointer;
     animation: moving 2s infinite;
 }
 .activate{
     border-radius: 100%;
     background-color : green;
     border : 2px solid gray;
+    cursor:pointer;
     animation: moving 2s infinite;
 }
 .deactivate{

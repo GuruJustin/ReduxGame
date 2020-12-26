@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 import '../../../public/css/puzzling.css';
 
@@ -8,7 +9,8 @@ class Puzzling extends React.Component {
         super(props)
     }
 
-    componentDidMount(){}
+    componentDidMount(){
+    }
 
     render () {
         return (
@@ -17,19 +19,21 @@ class Puzzling extends React.Component {
                 <div className="puzzling">
                     <div className = "puzzling_board">
                         <div className = "formula">
-                            <div className="problem">10- (7-3) =&nbsp;</div>
+                            <div className="problem">10-(7-3) =&nbsp;</div>
                             <input className ="result"></input>
                         </div>
-                        <a className="next_button"></a>
+                        <Link to="/final" className = "next_button"></Link>
                     </div>
                     <div className = "puzzling_result">
-                        <div className="reulst_bg success_bg"></div>
-                        <div className="reulst_bg success_bg"></div>
-                        <div className="reulst_bg failed"></div>
-                        <div className="reulst_bg"></div>
-                        <div className="reulst_bg"></div>
-                        <div className="reulst_bg"></div>
-                        <div className="reulst_bg"></div>
+                        <div className="result_bg success_bg"></div>
+                        <div className="result_bg success_bg"></div>
+                        <div className="result_bg failed_bg"></div>
+                        <div className="result_bg"></div>
+                        <div className="result_bg"></div>
+                        <div className="result_bg"></div>
+                        <div className="result_bg"></div>
+                        <div className="result_bg"></div>
+                        <div className="result_bg"></div>
                     </div>
 
                 </div>

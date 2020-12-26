@@ -1,0 +1,48 @@
+.final_conatiner {
+    display:flex;
+    justify-content :center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.final_header {
+    height : 80px;
+    font-size : 80px;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    color : white;
+}
+
+.final_trophy {
+    width : 250px;
+    height : 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-image : url('../images/trophy.png');
+    display:flex;
+    flex-direction: column-reverse;
+    padding-bottom:10px;
+}
+
+.final_trophy .mark {
+    font-size : 140px;
+    height : 80px;
+    text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+    color : white;
+}
+.final_trophy .content {
+    font-size : 25px;
+    margin-top:-10px;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    color : white;
+}
+
+.final_submit img{
+    margin-top:20px;
+    width : 200px;
+    height : 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-image : url('../images/Kreni opet.png');
+}

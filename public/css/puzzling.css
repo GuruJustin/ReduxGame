@@ -5,14 +5,15 @@
     flex-direction: column;
 }
 .puzzling_header {
-    width : 250px;
-    height : 100px;
+    width : 300px;
+    height : 120px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size:contain;
+    background-size: 100% 100%;
     background-image : url('../images/puzzle_comment.png');
-    animation: falling 2s;
-    position:absolute
+    animation: falling 1s;
+    position:absolute;
+    top :5px
 }
 
 
@@ -21,10 +22,10 @@
         transform: translateY(-100px);
     }
     60% {
-        transform: translateY(150px);
+        transform: translateY(5px);
     }
     100% {
-        transform: translateY(140px);
+        transform: translateY(0px);
     }
 }
 
@@ -36,11 +37,11 @@
 }
 
 .puzzling_board {
-    width : 250px;
-    height : 200px;
+    width : 300px;
+    height : 230px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size:contain;
+    background-size: 100% 100%;
     background-image : url('../images/puzzle_board.png');
     display:flex;
     flex-direction: column;
@@ -66,6 +67,10 @@
     background-color : green;
     height : 40px;
     width : 40px;
+    font-size : 30px;
+    color : white;
+    font-family: Myfont;
+    text-align: center;
 }
 
 .puzzling_board .next_button {
@@ -73,7 +78,7 @@
     height : 50px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size:contain;
+    background-size: 100% 100%;
     background-image : url('../images/Dalje.png');
 }
 
@@ -82,16 +87,17 @@
     display:flex;
     flex-direction:row;
     justify-content:space-around;
+    width : 80%;
+    margin-top:10px;
 }
 
 
 .result_bg {
-    width : 18px;
-    height : 18px;
+    width : 23px;
+    height : 23px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size:contain;
-    margin-top : 20px;
+    background-size: 100% 100%;
     background-image : url('../images/check_bg.png');
 }
 

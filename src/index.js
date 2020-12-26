@@ -9,11 +9,8 @@ import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
 import 'semantic-ui-css/semantic.min.css'
 
-import LevelMenu from './app/components/levelmenu'
-import Puzzling from './app/components/puzzling'
+import { BrowserRouter} from "react-router-dom";
 
-
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 const store = createStore(combinedReducers);
 
@@ -22,10 +19,6 @@ ReactDOM.render(
     <BrowserRouter>
       <Provider store={store}>
         <App />
-
-        <Route path="/levelmenu" component= {LevelMenu} />
-        <Route path="/puzzling" component= {Puzzling} />
-
       </Provider>
     </BrowserRouter>
   </React.StrictMode>,
