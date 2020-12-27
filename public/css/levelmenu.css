@@ -38,12 +38,13 @@
     width : 45px;
     font-weight : bold;
     color : white;
-    text-shadow: -1.45px -1.45px 0 #000, 1.45px -1.45px 0 #000, -1.45px 1.45px 0 #000, 1.45px 1.45px 0 #000;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     font-size : 65px;
     display:flex;
     align-items:center;
     justify-content:center;
     margin : 10px;
+    margin-bottom:15px;
 }
 
 .golden{
@@ -52,20 +53,23 @@
     background-position: center;
     background-size:130% 130%;
     cursor:pointer;
-    animation: moving 2s infinite;
+    animation: moving 1.5s infinite;
+    margin:2.5px;
+    height : 60px;
+    width : 60px;
 }
 .activate{
     border-radius: 100%;
-    background-color : green;
+    background-color : #3dcaac;
     border : 2px solid gray;
     cursor:pointer;
-    animation: moving 2s infinite;
+    animation: moving 1.5s infinite;
 }
 .deactivate{
     border-radius: 100%;
-    background-color : darkgray;
-    border : 2px solid gray;
-    color : darkgray;
+    background-color : #7f7c7a;
+    border : 1px solid #161412;
+    color : #d2d2d2;
 }
 
 

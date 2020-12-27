@@ -22,7 +22,7 @@ class Puzzling extends React.Component {
                             <div className="problem">10-(7-3) =&nbsp;</div>
                             <input className ="result"></input>
                         </div>
-                        <Link to="/final" className = "next_button">Dalje</Link>
+                        <Link to="/end" className = "next_button">Dalje</Link>
                     </div>
                     <div className = "puzzling_result">
                         <div className="result_bg success_bg"></div>

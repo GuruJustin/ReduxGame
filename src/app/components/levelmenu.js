@@ -11,6 +11,13 @@ class LevelMenu extends React.Component {
 
     componentDidMount(){}
 
+
+    specifySystem() {
+        var OSName="Unknown OS"; 
+        if (navigator.appVersion.indexOf("Win")!=-1) return false
+        return true
+    }
+
     render () {
         let menus = [
             {
@@ -59,6 +66,8 @@ class LevelMenu extends React.Component {
                 activate : false
             },
         ]
+        let padding = this.specifySystem() ? '15px' : '';
+        let paddingGolden = this.specifySystem() ? '15px' : '';
         return (
             <div className="levelmenu">
                 <div className="header"></div>
@@ -66,11 +75,11 @@ class LevelMenu extends React.Component {
                 <div className="level-menus">
                     {menus.map(function(item){
                         if (item.gold)
-                            return <Link to="/puzzling" className="level-each-menu golden" id = {item.key}>{item.level}</Link>;
+                            return <Link to="/puzzling" className="level-each-menu golden" style={{ paddingTop : paddingGolden}} id = {item.key}>{item.level}</Link>;
                         else if (item.activate)
-                            return <Link to="/puzzling" className="level-each-menu activate" id = {item.key}>{item.level}</Link>;
+                            return <Link to="/puzzling" className="level-each-menu activate" style={{ paddingTop : padding}} id = {item.key}>{item.level}</Link>;
                         else 
-                            return <div className="level-each-menu deactivate" id = {item.key}>{item.level}</div>;
+                            return <div className="level-each-menu deactivate" style={{ paddingTop : padding}} id = {item.key}>{item.level}</div>;
                     })}
                 </div>
 

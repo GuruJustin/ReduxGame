@@ -1,43 +1,51 @@
-.final_container {
+.end_container {
     display:flex;
     justify-content :center;
     align-items:center;
     flex-direction: column;
 }
 
-.final_header {
-    height : 80px;
+.end_header {
+    display:flex;
+    flex-direction: column;
+    height : 100px;
     font-size : 70px;
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
     color : white;
 }
+.end_header p{
+    margin-top : 15px !important;
+    text-shadow: -1.7px -1.7px 0 #000, 1.7px -1.7px 0 #000, -1.7px 1.7px 0 #000, 1.7px 1.7px 0 #000;
+    font-size : 24px;
+}
 
-.final_trophy {
-    width : 200px;
-    height : 250px;
+.end_mark {
+    width :170px;
+    height : 150px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
-    background-image : url('../images/trophy.png');
+    background-image : url('../images/gold-laurel.png');
     display:flex;
     flex-direction: column-reverse;
     padding-bottom:10px;
+    margin-top: 20px;
 }
 
-.final_trophy .mark {
+.end_mark .mark {
     font-size : 120px;
     height : 80px;
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
     color : white;
 }
-.final_trophy .content {
+.end_mark .content {
     font-size : 25px;
     margin-top:-10px;
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
     color : white;
 }
 
-.final_submit{
+.end_submit{
     font-size : 22px;
     color : white; 
     font-family: "bals";
@@ -46,7 +54,6 @@
 
     box-shadow: 0 2px, rgb(0,0,0);
     border-radius : 8px;
-    margin-top:20px;
     width : 150px;
     height : 40px;
     border : 2px white solid;
@@ -56,4 +63,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
+
+    margin-top:50px;
+
 }

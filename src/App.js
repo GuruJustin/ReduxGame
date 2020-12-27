@@ -1,7 +1,6 @@
 import React from 'react'
 import logo from './logo.svg'
 
-import bg from '../public/images/background.png'
 import './App.css';
 
 import { Route, Switch} from "react-router-dom";
@@ -10,6 +9,7 @@ import LevelMenu from './app/components/levelmenu'
 import Startup from './app/components/startup'
 import Puzzling from './app/components/puzzling'
 import Final from './app/components/final'
+import EndComponent from './app/components/end'
 import {connect} from 'react-redux'
 
 class App extends React.Component {
@@ -25,6 +25,7 @@ class App extends React.Component {
               <Route path="/levelmenu" component= {LevelMenu} />
               <Route path="/puzzling" component= {Puzzling} />
               <Route path="/final" component= {Final} />
+              <Route path="/end" component= {EndComponent} />
           </Switch>
         </div>
     );

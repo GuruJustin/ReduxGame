@@ -15,16 +15,24 @@ class Startup extends React.Component {
         super(props)
     }
 
-    componentDidMount(){}
+    componentDidMount(){
+    }
 
     componentWillMount() {
         this.setState({
             preloading : this.props.preloading
         })
     }
+
+    specifySystem() {
+        var OSName="Unknown OS"; 
+        if (navigator.appVersion.indexOf("Win")!=-1) return false
+        return true
+    }
     
     render () {
-        const {preloading} = this.props;
+        const {preloading} = this.props
+        const mac = this.specifySystem()
         return (
             <div>
                 {
@@ -33,8 +41,16 @@ class Startup extends React.Component {
                     : <div className="startup">
                         <img className="title" src={start_title}/>
                         <img className="teacher" src={teacher} />
-                        <Link to="/levelmenu" className="start_button">START!</Link>
-                        <Link to="/puzzling" className="menu_button">IZABERI KVIZ</Link>
+                        {
+                            mac
+                            ?   <Link to="/levelmenu" className="start_button" style ={{paddingTop: '13px'}}>START!</Link>
+                            :   <Link to="/levelmenu" className="start_button">START!</Link>
+                        }
+                        {
+                            mac
+                            ?   <Link to="/puzzling" className="menu_button" style ={{paddingTop: '7px'}}>IZABERI KVIZ</Link>
+                            :   <Link to="/puzzling" className="menu_button">IZABERI KVIZ</Link>
+                        }
                     </div>
                 }
             </div>

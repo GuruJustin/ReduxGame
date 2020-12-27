@@ -90,21 +90,24 @@
     height : 40px;
     opacity : 0.8;
     background-color: #618173;
-    box-shadow: 0 2px, rgb(0,0,0);
+    box-shadow: 0 3px, rgb(0,0,0);
     border : 2px white solid;
-    border-radius : 4px;
+    border-radius : 8px;
 
     font-size : 22px;
     font-weight : 100;
     color : white; 
-    text-shadow: 0px 1px rgba(0,0,0,0.3);
 
     
     font-size : 22px;
     color : white; 
     font-family: "bals";
-    text-shadow: 0px 1px rgba(0,0,0,0.3);
     font-weight : 100;
+    text-shadow:
+      -0.6px -0.6px 0 #000,
+      0.6px -0.6px 0 #000,
+      -0.6px 0.6px 0 #000,
+      0.6px 0.6px 0 #000;
 }
 
 

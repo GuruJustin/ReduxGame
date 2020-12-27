@@ -15,7 +15,6 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-attachment: fixed;
-  background-size:cover;
   height : 100vh;
   display:flex;
   justify-content:center;
@@ -62,26 +61,30 @@
 
 .startup .teacher {
   width : 180px;
-  height : 200px;
-}
-
-.startup .start_button {
-  width : 250px;
-  margin-top : -30px;
+  height : 240px;
 }
 
 .startup .start_button{
+  width : 250px;
+  margin-top : -35px;
   background-color : #2bcaaa;
   border : 2px solid black;
-  border-radius : 2px;
+  border-radius : 8px;
   color : white;
-  display:flex;
-  align-items:center;
-  justify-content :center;
   font-size : 45px;
-  text-shadow: -1.1px -1.1px 0 #000, 1.1px -1.1px 0 #000, -1.1px 1.1px 0 #000, 1.1px 1.1px 0 #000;
+  text-shadow:
+    -1.2px -1.2px 0 #000,
+    1.2px -1.2px 0 #000,
+    -1.2px 1.2px 0 #000,
+    1.2px 1.2px 0 #000;
   height : 60px;
   margin-bottom:5px;
+
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  align-items:center;
 }
 
 .startup .menu_button{
@@ -89,11 +92,15 @@
   width : 250px;
   background-color : #ef7b47;
   border : 2px solid black;
-  border-radius : 2px;
+  border-radius : 8px;
   color : white;
   display:flex;
   align-items:center;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow:
+    -1.2px -1.2px 0 #000,
+    1.2px -1.2px 0 #000,
+    -1.2px 1.2px 0 #000,
+    1.2px 1.2px 0 #000;
   justify-content :center;
   font-size : 27px;
 }
