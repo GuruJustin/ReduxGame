@@ -38,7 +38,7 @@ class Final extends React.Component {
                         5+
                     </div>
                 </div>
-                <Link to="/levelmenu" className = "final_submit"><img /></Link>
+                <Link to="/levelmenu" className = "final_submit">Kreni opet</Link>
             </div>
         );
     }

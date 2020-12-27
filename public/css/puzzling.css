@@ -2,18 +2,26 @@
     display:flex;
     justify-content :center;
     align-items:center;
+    font-family: "Bals";
     flex-direction: column;
 }
 .puzzling_header {
+    text-align: start;
+    padding : 0px 0px 10px 10px;
     width : 250px;
     height : 100px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    background-image : url('../images/puzzle_comment.png');
     animation: falling 1s;
     position:absolute;
-    top :5px
+    top :5px;
+    background :white;
+    color : black;
+    font-size  : 14px;
+    display:flex;
+    justify-content :center;
+    align-items:center;
+    border : 1px solid  gray;
+    border-radius:2px;
+    box-shadow: 0 2px 2px -1px;
 }
 
 
@@ -52,34 +60,51 @@
 
 .puzzling_board .formula {
     display:flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content : center;
-    margin-bottom:30px;
+    margin-bottom:20px;
     align-items: center;
 }
 
 .puzzling_board .formula .problem{
     font-size : 30px;
-    color : white
+    color : white;
+    font-weight : bold;
 }
 .puzzling_board .formula .result{
     border : 2px dashed white;
-    background-color : green;
+    background-color : #6c813b;
     height : 40px;
     width : 40px;
     font-size : 30px;
     color : white;
-    font-family: Myfont;
     text-align: center;
 }
 
 .puzzling_board .next_button {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
     width : 80px;
     height : 40px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    background-image : url('../images/Dalje.png');
+    opacity : 0.8;
+    background-color: #618173;
+    box-shadow: 0 2px, rgb(0,0,0);
+    border : 2px white solid;
+    border-radius : 4px;
+
+    font-size : 22px;
+    font-weight : 100;
+    color : white; 
+    text-shadow: 0px 1px rgba(0,0,0,0.3);
+
+    
+    font-size : 22px;
+    color : white; 
+    font-family: "bals";
+    text-shadow: 0px 1px rgba(0,0,0,0.3);
+    font-weight : 100;
 }
 
 

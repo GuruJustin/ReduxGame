@@ -15,14 +15,14 @@ class Puzzling extends React.Component {
     render () {
         return (
             <div className = "puzzling_container">
-                <div className="puzzling_header"></div>
+                <div className="puzzling_header"><p><strong>Kviz 4</strong> Ponavljanje sabiranja i oduzimanja u prvoj desetici. Ukucaj tačan odgovor i klikni na “Dalje”.</p></div>
                 <div className="puzzling">
                     <div className = "puzzling_board">
                         <div className = "formula">
                             <div className="problem">10-(7-3) =&nbsp;</div>
                             <input className ="result"></input>
                         </div>
-                        <Link to="/final" className = "next_button"></Link>
+                        <Link to="/final" className = "next_button">Dalje</Link>
                     </div>
                     <div className = "puzzling_result">
                         <div className="result_bg success_bg"></div>
