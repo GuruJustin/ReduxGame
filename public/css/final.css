@@ -1,4 +1,4 @@
-.final_conatiner {
+.final_container {
     display:flex;
     justify-content :center;
     align-items:center;
@@ -7,14 +7,14 @@
 
 .final_header {
     height : 80px;
-    font-size : 80px;
+    font-size : 70px;
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
     color : white;
 }
 
 .final_trophy {
-    width : 250px;
-    height : 300px;
+    width : 200px;
+    height : 250px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
@@ -25,7 +25,7 @@
 }
 
 .final_trophy .mark {
-    font-size : 140px;
+    font-size : 120px;
     height : 80px;
     text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
     color : white;
@@ -39,8 +39,8 @@
 
 .final_submit img{
     margin-top:20px;
-    width : 200px;
-    height : 50px;
+    width : 150px;
+    height : 40px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;

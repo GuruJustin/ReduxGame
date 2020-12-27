@@ -6,8 +6,8 @@
 }
 
 .levelmenu .header {
-    width : 300px;
-    height : 107px;
+    width : 250px;
+    height : 90px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
@@ -16,8 +16,8 @@
 }
 
 .levelmenu .footer {
-    width : 300px;
-    height : 55px;
+    width : 250px;
+    height : 50px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
@@ -30,16 +30,16 @@
     flex-direction: row;
     flex-wrap : wrap;
     justify-content : space-around;
-    width : 300px;
+    width : 250px;
 }
 
 .level-each-menu {
-    height : 65px;
-    width : 65px;
+    height : 45px;
+    width : 45px;
     font-weight : bold;
     color : white;
     text-shadow: -1.45px -1.45px 0 #000, 1.45px -1.45px 0 #000, -1.45px 1.45px 0 #000, 1.45px 1.45px 0 #000;
-    font-size : 80px;
+    font-size : 65px;
     display:flex;
     align-items:center;
     justify-content:center;
